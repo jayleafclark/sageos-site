@@ -109,6 +109,9 @@ a:focus-visible,button:focus-visible{outline:2px solid #3E8E6E;outline-offset:2p
 .stage .scene > *:nth-child(2){display:none!important}
 .stage .tabs{display:none!important}
 .scene .in{animation-duration:.5s}
+/* Make the hero fill the first screen and anchor the CTAs to the bottom of that view. */
+.scene{min-height:calc(100vh - 80px);min-height:calc(100svh - 80px);align-items:stretch}
+.scene .btns{margin-top:auto}
 }
 .sw::before{content:"";position:absolute;inset:-10px -8px}
 
