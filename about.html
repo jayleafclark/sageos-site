@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About · Sage OS</title>
+<meta name="description" content="We built the system we needed for a life lived in 30-day stays.">
+<link rel="canonical" href="https://sageos.co/about">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SageOS"><meta property="og:title" content="About · Sage OS"><meta property="og:description" content="We built the system we needed for a life lived in 30-day stays."><meta property="og:url" content="https://sageos.co/about">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@keyframes sgRise{from{opacity:.001;transform:translateY(14px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.rise{animation:sgRise 1.1s cubic-bezier(.22,1,.36,1) both}.d1{animation-delay:.15s}.d2{animation-delay:.32s}.d3{animation-delay:.5s}
+@keyframes sgReveal{from{opacity:.001;transform:translateY(22px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){.sec .card,.sec .panel,.sec .shot,.sec .band,.sec .li,.sec .kpi{animation:sgReveal linear both;animation-timeline:view();animation-range:entry 0% cover 22%}}
+.card,.panel,.tile,.shot{transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s cubic-bezier(.22,1,.36,1),background .4s}
+a.card:hover,.card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -24px rgba(17,22,19,.28)}
+.bandorb{position:absolute;top:22px;right:22px;pointer-events:none;opacity:.95}
+@media (max-width: 600px){.bandorb{display:none}}
+body{margin:0;background:#FFFFFF}
+a{color:#1E4D3A}a:hover{color:#123326}
+.w{width:100%;max-width:1180px;margin:0 auto;box-sizing:border-box;padding-inline:24px}
+.sec{padding-block:clamp(56px,7vw,96px)}
+.alt{background:#F4F6F5}
+.eb{font:600 12px/1.2 Geist,sans-serif;letter-spacing:.5px;text-transform:uppercase;color:#5A625E}
+.h1{margin:0;font-size:clamp(2.25rem,1.4rem + 2.6vw,3.5rem);line-height:1.04;font-weight:600;letter-spacing:-.035em;text-wrap:balance}
+.h2{margin:0;font-size:clamp(1.625rem,1.2rem + 1.3vw,2.25rem);line-height:1.12;font-weight:600;letter-spacing:-.025em;text-wrap:balance}
+.h3{margin:0;font-size:17px;line-height:22px;font-weight:650;letter-spacing:-.2px;padding-left:10px;border-left:4px solid #3E8E6E}
+.lead{margin:0;font-size:clamp(1rem,.95rem + .25vw,1.125rem);line-height:1.65;color:#2E3532;max-width:38em}
+.p{margin:0;font-size:15px;line-height:1.6;color:#2E3532}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 22px;border-radius:12px;background:#1E4D3A;color:#FFFFFF;font:600 15px Geist,sans-serif;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:#123326;color:#FFFFFF}.btn:active{transform:scale(.98)}
+.btnw{background:#FFFFFF;color:#1E4D3A}.btnw:hover{background:#E7EFEA;color:#1E4D3A}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{background:#F4F6F5;border:1px solid transparent;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:8px;color:#111613}
+.band{position:relative;overflow:hidden;border-radius:20px;color:#FFFFFF;background:#1E4D3A}
+@media (max-width: 900px){.grid{grid-template-columns:1fr}}
+@media (max-width: 600px){.btns .btn{flex:1 1 100%}.band{border-radius:20px}.w{padding-inline:16px}}
+a:focus-visible,button:focus-visible{outline:2px solid #3E8E6E;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+.alt .card{background:#FFFFFF}
+
+
+body{margin:0}
+a{color:#1E4D3A}a:hover{color:#123326}
+.nv-bar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.88);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px)}
+.nv-in{width:100%;max-width:1180px;margin:0 auto;box-sizing:border-box;padding:0 24px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nv-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#111613}
+.nv-orb{width:46px;height:46px;flex:none;display:block}
+.nv-word{font-size:28px;font-weight:600;letter-spacing:-0.8px;line-height:1}
+.nv-links{display:flex;align-items:center;gap:2px}
+.nv-l{height:38px;padding:0 12px;border-radius:9px;font-size:14px;font-weight:500;color:#2E3532;text-decoration:none;white-space:nowrap;display:flex;align-items:center;transition:color .2s,background .2s}
+.nv-l:hover{color:#111613;background:#F4F6F5}
+.nv-l.on{background:#111613;color:#FFFFFF;font-weight:600}
+.nv-cta{margin-left:10px;height:42px;padding:0 18px;border-radius:12px;background:#1E4D3A;color:#FFFFFF;font-size:14px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;white-space:nowrap;transition:background .2s}
+.nv-cta:hover{background:#123326;color:#FFFFFF}
+.nv-burger{display:none;width:44px;height:44px;border:1px solid #DCE2DE;border-radius:12px;background:#FFFFFF;align-items:center;justify-content:center;cursor:pointer}
+.nv-panel{display:none}
+@keyframes nvDrop{from{opacity:.001;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (max-width: 1040px){
+.nv-links{display:none}
+.nv-burger{display:flex}
+.nv-panel{display:flex;flex-direction:column;padding:4px 24px 20px;animation:nvDrop .3s cubic-bezier(.32,.72,0,1) both}
+}
+@media (max-width: 600px){.nv-in{height:64px;padding:0 16px}.nv-orb{width:38px;height:38px}.nv-word{font-size:23px}.nv-panel{padding:4px 16px 20px}}
+.nv-m{min-height:52px;display:flex;align-items:center;font-size:17px;font-weight:500;color:#111613;text-decoration:none;border-bottom:1px solid #EEF1EF}
+.nv-m.on{color:#1E4D3A;font-weight:600}
+a:focus-visible,button:focus-visible{outline:2px solid #3E8E6E;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+
+body{margin:0}
+a{color:#1E4D3A}a:hover{color:#123326}
+.ft{border-top:1px solid #E6EAE7;background:#FFFFFF}
+.ft-in{width:100%;max-width:1180px;margin:0 auto;box-sizing:border-box;padding:44px 24px 32px;display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px}
+.ft-h{font:600 12px Geist,sans-serif;letter-spacing:.5px;text-transform:uppercase;color:#5A625E;margin-bottom:4px}
+.ft-col{display:flex;flex-direction:column;gap:8px}
+.ft-a{font-size:14px;color:#2E3532;text-decoration:none;transition:color .2s}
+.ft-a:hover{color:#1E4D3A}
+.ft-base{width:100%;max-width:1180px;margin:0 auto;box-sizing:border-box;padding:16px 24px 28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12px;color:#5A625E;border-top:1px solid #EEF1EF}
+@media (max-width: 720px){.ft-in{grid-template-columns:repeat(2,minmax(0,1fr))}.ft-brand{grid-column:1 / -1}}
+</style>
+</head>
+<body>
+<div id="app"><div style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #111613; background: #FFFFFF; -webkit-font-smoothing: antialiased">
+<div data-dc-import="Nav" data-props="{&quot;active&quot;:&quot;about&quot;}"><div class="nv-bar" style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #111613">
+<div class="nv-in">
+<a class="nv-logo" href="/" aria-label="Sage OS home">
+<svg class="nv-orb" viewBox="-10 -10 120 120" aria-hidden="true" style="overflow: visible"><defs><filter id="nvb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5.5"/></filter><filter id="nvc" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter><linearGradient id="nv1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8F2DA"/><stop offset="0.55" stop-color="#5FC9A6"/><stop offset="1" stop-color="#2F9C7C"/></linearGradient><linearGradient id="nv2" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#3E9474"/><stop offset="0.6" stop-color="#245C46"/><stop offset="1" stop-color="#1E4D3A"/></linearGradient><radialGradient id="nv3" cx="0.4" cy="0.4"><stop offset="0" stop-color="#F2FFF8"/><stop offset="0.45" stop-color="#C9EFD9"/><stop offset="1" stop-color="#C9EFD9" stop-opacity="0.4"/></radialGradient></defs><g><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"/><g filter="url(#nvb)"><ellipse cx="50.6" cy="35.7" rx="26.6" ry="18.7" fill="url(#nv1)" opacity="0.95"><animate attributeName="rx" values="26.6;29.5;26.6" dur="6s" repeatCount="indefinite"/></ellipse><ellipse cx="63.7" cy="58.6" rx="18" ry="15.8" fill="url(#nv3)" opacity="0.9"><animate attributeName="ry" values="15.8;18;15.8" dur="6s" repeatCount="indefinite"/></ellipse><ellipse cx="43.5" cy="37" rx="10.8" ry="10" fill="#E3F2B0" opacity="0.55"></ellipse></g><g filter="url(#nvc)"><ellipse cx="30.5" cy="60" rx="15" ry="21.6" fill="url(#nv2)" opacity="0.82"><animate attributeName="cy" values="60;56;60" dur="6s" repeatCount="indefinite"/></ellipse></g></g></svg>
+<span class="nv-word">Sage <span style="font-weight: 400; color: #5A625E">OS</span></span>
+</a>
+<div class="nv-links">
+
+<a href="/" class="nv-l">Home</a>
+
+<a href="/concierge" class="nv-l">Concierge</a>
+
+<a href="/health" class="nv-l">Health</a>
+
+<a href="/money" class="nv-l">Money</a>
+
+<a href="/travel" class="nv-l">Travel</a>
+
+<a href="/vault" class="nv-l">Vault</a>
+
+<a href="/family" class="nv-l">Family</a>
+
+<a href="/privacy" class="nv-l">Privacy</a>
+
+<a class="nv-cta" href="/waitlist">Join the waitlist</a>
+</div>
+<button class="nv-burger" type="button" data-on-click="s25:0" aria-expanded="false" aria-label="Open menu">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111613" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
+
+</button>
+</div>
+
+</div></div>
+
+<section class="sec">
+<div class="w" style="display: flex; flex-direction: column; gap: 18px; max-width: 840px; margin-left: auto; margin-right: auto">
+<span class="rise heroorb" style="display: block"><svg width="72" height="72" viewBox="-10 -10 120 120" aria-hidden="true" style="display: block; flex: none; overflow: visible; "><defs><filter id="hoAbob" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5.5"/></filter><filter id="hoAboc" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter><radialGradient id="hoAboh"><stop offset="0" stop-color="#C4EED8" stop-opacity="0.85"/><stop offset="0.6" stop-color="#C4EED8" stop-opacity="0.35"/><stop offset="1" stop-color="#C4EED8" stop-opacity="0"/></radialGradient><linearGradient id="hoAbo1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8F2DA"/><stop offset="0.55" stop-color="#5FC9A6"/><stop offset="1" stop-color="#2F9C7C"/></linearGradient><linearGradient id="hoAbo2" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#3E9474"/><stop offset="0.6" stop-color="#245C46"/><stop offset="1" stop-color="#1E4D3A"/></linearGradient><radialGradient id="hoAbo3" cx="0.4" cy="0.4"><stop offset="0" stop-color="#F2FFF8"/><stop offset="0.45" stop-color="#C9EFD9"/><stop offset="1" stop-color="#C9EFD9" stop-opacity="0.4"/></radialGradient></defs><circle cx="50" cy="50" r="52" fill="url(#hoAboh)"/><g><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="14s" repeatCount="indefinite"/><g filter="url(#hoAbob)"><ellipse cx="50.6" cy="35.7" rx="26.6" ry="18.7" fill="url(#hoAbo1)" opacity="0.95"><animate attributeName="rx" values="26.6;29.5;26.6" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="35.7;32;35.7" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="63.7" cy="58.6" rx="18" ry="15.8" fill="url(#hoAbo3)" opacity="0.9"><animate attributeName="ry" values="15.8;18;15.8" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="43.5" cy="37" rx="10.8" ry="10" fill="#E3F2B0" opacity="0.55"><animate attributeName="cx" values="43.5;50;43.5" dur="14s" repeatCount="indefinite"/></ellipse></g><g filter="url(#hoAboc)"><ellipse cx="30.5" cy="60" rx="15" ry="21.6" fill="url(#hoAbo2)" opacity="0.82"><animate attributeName="cy" values="60;56;60" dur="7s" repeatCount="indefinite"/></ellipse></g></g></svg></span>
+<span class="eb rise">About SageOS</span>
+<h1 class="h1 rise d1">We built the system we needed for a life lived in 30-day stays.</h1>
+<p class="lead rise d2">A new city every month, a business to run, family across time zones, and the same questions every time. Where’s my passport number? What did we spend? Who do I call for a dentist here? Sage OS is the one place that answers, and the concierge that does the calling.</p>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="w" style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px"><span class="eb">What we believe</span><h2 class="h2">Three rules we build by.</h2></div>
+<div class="grid">
+
+<div class="card"><span class="eb" style="font-size: 11px">One copy</span><span class="h3">Every fact lives in one place</span><span class="p">A booking, bill or birthday is stored once and shown everywhere it matters.</span></div>
+
+<div class="card"><span class="eb" style="font-size: 11px">Plain words</span><span class="h3">Written like a person talks</span><span class="p">“Take an umbrella tonight” beats a weather widget.</span></div>
+
+<div class="card"><span class="eb" style="font-size: 11px">You decide</span><span class="h3">Helpful, never pushy</span><span class="p">Sage works on tasks you start, asks before it spends, and stays quiet otherwise.</span></div>
+
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="w">
+<div class="band" style="padding: clamp(28px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 6px"><span style="display: block; margin-bottom: 4px"><svg width="44" height="44" viewBox="-10 -10 120 120" aria-hidden="true" style="display: block; flex: none; overflow: visible; "><defs><filter id="boAbo1b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5.5"/></filter><filter id="boAbo1c" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter><linearGradient id="boAbo11" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8F2DA"/><stop offset="0.55" stop-color="#5FC9A6"/><stop offset="1" stop-color="#2F9C7C"/></linearGradient><linearGradient id="boAbo12" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#3E9474"/><stop offset="0.6" stop-color="#245C46"/><stop offset="1" stop-color="#1E4D3A"/></linearGradient><radialGradient id="boAbo13" cx="0.4" cy="0.4"><stop offset="0" stop-color="#F2FFF8"/><stop offset="0.45" stop-color="#C9EFD9"/><stop offset="1" stop-color="#C9EFD9" stop-opacity="0.4"/></radialGradient></defs><g><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="14s" repeatCount="indefinite"/><g filter="url(#boAbo1b)"><ellipse cx="50.6" cy="35.7" rx="26.6" ry="18.7" fill="url(#boAbo11)" opacity="0.95"><animate attributeName="rx" values="26.6;29.5;26.6" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="35.7;32;35.7" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="63.7" cy="58.6" rx="18" ry="15.8" fill="url(#boAbo13)" opacity="0.9"><animate attributeName="ry" values="15.8;18;15.8" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="43.5" cy="37" rx="10.8" ry="10" fill="#E3F2B0" opacity="0.55"><animate attributeName="cx" values="43.5;50;43.5" dur="14s" repeatCount="indefinite"/></ellipse></g><g filter="url(#boAbo1c)"><ellipse cx="30.5" cy="60" rx="15" ry="21.6" fill="url(#boAbo12)" opacity="0.82"><animate attributeName="cy" values="60;56;60" dur="7s" repeatCount="indefinite"/></ellipse></g></g></svg></span><h2 class="h2">Want to be one of the first?</h2><span class="p" style="color: rgba(255,255,255,0.82)">SageOS · sageos.co</span></div>
+<div class="btns"><a class="btn btnw" href="/waitlist">Join the waitlist</a></div>
+</div>
+</div>
+</section>
+<div data-dc-import="Footer" data-props="{}"><footer class="ft" style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #111613">
+<div class="ft-in">
+<div class="ft-col ft-brand">
+<a href="/" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: #111613">
+<svg width="38" height="38" viewBox="-10 -10 120 120" aria-hidden="true" style="display: block; flex: none; overflow: visible; "><defs><filter id="ftxb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5.5"/></filter><filter id="ftxc" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter><linearGradient id="ftx1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8F2DA"/><stop offset="0.55" stop-color="#5FC9A6"/><stop offset="1" stop-color="#2F9C7C"/></linearGradient><linearGradient id="ftx2" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#3E9474"/><stop offset="0.6" stop-color="#245C46"/><stop offset="1" stop-color="#1E4D3A"/></linearGradient><radialGradient id="ftx3" cx="0.4" cy="0.4"><stop offset="0" stop-color="#F2FFF8"/><stop offset="0.45" stop-color="#C9EFD9"/><stop offset="1" stop-color="#C9EFD9" stop-opacity="0.4"/></radialGradient></defs><g><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="14s" repeatCount="indefinite"/><g filter="url(#ftxb)"><ellipse cx="50.6" cy="35.7" rx="26.6" ry="18.7" fill="url(#ftx1)" opacity="0.95"><animate attributeName="rx" values="26.6;29.5;26.6" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="35.7;32;35.7" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="63.7" cy="58.6" rx="18" ry="15.8" fill="url(#ftx3)" opacity="0.9"><animate attributeName="ry" values="15.8;18;15.8" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="43.5" cy="37" rx="10.8" ry="10" fill="#E3F2B0" opacity="0.55"><animate attributeName="cx" values="43.5;50;43.5" dur="14s" repeatCount="indefinite"/></ellipse></g><g filter="url(#ftxc)"><ellipse cx="30.5" cy="60" rx="15" ry="21.6" fill="url(#ftx2)" opacity="0.82"><animate attributeName="cy" values="60;56;60" dur="7s" repeatCount="indefinite"/></ellipse></g></g></svg>
+<span style="font-size: 23px; font-weight: 600; letter-spacing: -0.6px">Sage <span style="font-weight: 400; color: #5A625E">OS</span></span>
+</a>
+<span style="font-size: 14px; line-height: 1.55; color: #5A625E; max-width: 280px">Your health, money, trips and papers in one place, with a concierge that asks before it acts.</span>
+</div>
+<div class="ft-col"><span class="ft-h">Product</span><a class="ft-a" href="/concierge">Concierge</a><a class="ft-a" href="/health">Health</a><a class="ft-a" href="/money">Money</a><a class="ft-a" href="/travel">Travel</a></div>
+<div class="ft-col"><span class="ft-h">More</span><a class="ft-a" href="/vault">Vault</a><a class="ft-a" href="/family">Family</a><a class="ft-a" href="/privacy">Privacy</a><a class="ft-a" href="/about">About</a></div>
+<div class="ft-col"><span class="ft-h">Get in</span><a class="ft-a" href="/waitlist">Join the waitlist</a><span class="ft-a">sageos.co</span></div>
+</div>
+<div class="ft-base"><span>© 2026 SageOS</span><span>Sage helps you keep track. It isn’t medical, tax or legal advice.</span></div>
+</footer></div>
+</div></div>
+<script src="/assets/app.js"></script>
+<script>__dc("About", "<div style=\"font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #111613; background: #FFFFFF; -webkit-font-smoothing: antialiased\">\n<dc-import name=\"Nav\" active=\"about\" hint-size=\"100%,80px\"></dc-import>\n\n<section class=\"sec\">\n<div class=\"w\" style=\"display: flex; flex-direction: column; gap: 18px; max-width: 840px; margin-left: auto; margin-right: auto\">\n<span class=\"rise heroorb\" style=\"display: block\"><svg width=\"72\" height=\"72\" viewBox=\"-10 -10 120 120\" aria-hidden=\"true\" style=\"display: block; flex: none; overflow: visible; \"><defs><filter id=\"hoAbob\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"5.5\"/></filter><filter id=\"hoAboc\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"7\"/></filter><radialGradient id=\"hoAboh\"><stop offset=\"0\" stop-color=\"#C4EED8\" stop-opacity=\"0.85\"/><stop offset=\"0.6\" stop-color=\"#C4EED8\" stop-opacity=\"0.35\"/><stop offset=\"1\" stop-color=\"#C4EED8\" stop-opacity=\"0\"/></radialGradient><linearGradient id=\"hoAbo1\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#B8F2DA\"/><stop offset=\"0.55\" stop-color=\"#5FC9A6\"/><stop offset=\"1\" stop-color=\"#2F9C7C\"/></linearGradient><linearGradient id=\"hoAbo2\" x1=\"0\" y1=\"0\" x2=\"0.3\" y2=\"1\"><stop offset=\"0\" stop-color=\"#3E9474\"/><stop offset=\"0.6\" stop-color=\"#245C46\"/><stop offset=\"1\" stop-color=\"#1E4D3A\"/></linearGradient><radialGradient id=\"hoAbo3\" cx=\"0.4\" cy=\"0.4\"><stop offset=\"0\" stop-color=\"#F2FFF8\"/><stop offset=\"0.45\" stop-color=\"#C9EFD9\"/><stop offset=\"1\" stop-color=\"#C9EFD9\" stop-opacity=\"0.4\"/></radialGradient></defs><circle cx=\"50\" cy=\"50\" r=\"52\" fill=\"url(#hoAboh)\"/><g><animateTransform attributeName=\"transform\" type=\"rotate\" from=\"0 50 50\" to=\"360 50 50\" dur=\"14s\" repeatCount=\"indefinite\"/><g filter=\"url(#hoAbob)\"><ellipse cx=\"50.6\" cy=\"35.7\" rx=\"26.6\" ry=\"18.7\" fill=\"url(#hoAbo1)\" opacity=\"0.95\"><animate attributeName=\"rx\" values=\"26.6;29.5;26.6\" dur=\"7s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"35.7;32;35.7\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse><ellipse cx=\"63.7\" cy=\"58.6\" rx=\"18\" ry=\"15.8\" fill=\"url(#hoAbo3)\" opacity=\"0.9\"><animate attributeName=\"ry\" values=\"15.8;18;15.8\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse><ellipse cx=\"43.5\" cy=\"37\" rx=\"10.8\" ry=\"10\" fill=\"#E3F2B0\" opacity=\"0.55\"><animate attributeName=\"cx\" values=\"43.5;50;43.5\" dur=\"14s\" repeatCount=\"indefinite\"/></ellipse></g><g filter=\"url(#hoAboc)\"><ellipse cx=\"30.5\" cy=\"60\" rx=\"15\" ry=\"21.6\" fill=\"url(#hoAbo2)\" opacity=\"0.82\"><animate attributeName=\"cy\" values=\"60;56;60\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse></g></g></svg></span>\n<span class=\"eb rise\">About SageOS</span>\n<h1 class=\"h1 rise d1\">We built the system we needed for a life lived in 30-day stays.</h1>\n<p class=\"lead rise d2\">A new city every month, a business to run, family across time zones, and the same questions every time. Where’s my passport number? What did we spend? Who do I call for a dentist here? Sage OS is the one place that answers, and the concierge that does the calling.</p>\n</div>\n</section>\n\n<section class=\"sec alt\">\n<div class=\"w\" style=\"display: flex; flex-direction: column; gap: 28px\">\n<div style=\"display: flex; flex-direction: column; gap: 12px\"><span class=\"eb\">What we believe</span><h2 class=\"h2\">Three rules we build by.</h2></div>\n<div class=\"grid\">\n<sc-for list=\"{{ values }}\" as=\"v\" hint-placeholder-count=\"3\">\n<div class=\"card\"><span class=\"eb\" style=\"font-size: 11px\">{{ v.tag }}</span><span class=\"h3\">{{ v.title }}</span><span class=\"p\">{{ v.body }}</span></div>\n</sc-for>\n</div>\n</div>\n</section>\n\n<section class=\"sec\">\n<div class=\"w\">\n<div class=\"band\" style=\"padding: clamp(28px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px\">\n<div style=\"display: flex; flex-direction: column; gap: 6px\"><span style=\"display: block; margin-bottom: 4px\"><svg width=\"44\" height=\"44\" viewBox=\"-10 -10 120 120\" aria-hidden=\"true\" style=\"display: block; flex: none; overflow: visible; \"><defs><filter id=\"boAbo1b\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"5.5\"/></filter><filter id=\"boAbo1c\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"7\"/></filter><linearGradient id=\"boAbo11\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#B8F2DA\"/><stop offset=\"0.55\" stop-color=\"#5FC9A6\"/><stop offset=\"1\" stop-color=\"#2F9C7C\"/></linearGradient><linearGradient id=\"boAbo12\" x1=\"0\" y1=\"0\" x2=\"0.3\" y2=\"1\"><stop offset=\"0\" stop-color=\"#3E9474\"/><stop offset=\"0.6\" stop-color=\"#245C46\"/><stop offset=\"1\" stop-color=\"#1E4D3A\"/></linearGradient><radialGradient id=\"boAbo13\" cx=\"0.4\" cy=\"0.4\"><stop offset=\"0\" stop-color=\"#F2FFF8\"/><stop offset=\"0.45\" stop-color=\"#C9EFD9\"/><stop offset=\"1\" stop-color=\"#C9EFD9\" stop-opacity=\"0.4\"/></radialGradient></defs><g><animateTransform attributeName=\"transform\" type=\"rotate\" from=\"0 50 50\" to=\"360 50 50\" dur=\"14s\" repeatCount=\"indefinite\"/><g filter=\"url(#boAbo1b)\"><ellipse cx=\"50.6\" cy=\"35.7\" rx=\"26.6\" ry=\"18.7\" fill=\"url(#boAbo11)\" opacity=\"0.95\"><animate attributeName=\"rx\" values=\"26.6;29.5;26.6\" dur=\"7s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"35.7;32;35.7\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse><ellipse cx=\"63.7\" cy=\"58.6\" rx=\"18\" ry=\"15.8\" fill=\"url(#boAbo13)\" opacity=\"0.9\"><animate attributeName=\"ry\" values=\"15.8;18;15.8\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse><ellipse cx=\"43.5\" cy=\"37\" rx=\"10.8\" ry=\"10\" fill=\"#E3F2B0\" opacity=\"0.55\"><animate attributeName=\"cx\" values=\"43.5;50;43.5\" dur=\"14s\" repeatCount=\"indefinite\"/></ellipse></g><g filter=\"url(#boAbo1c)\"><ellipse cx=\"30.5\" cy=\"60\" rx=\"15\" ry=\"21.6\" fill=\"url(#boAbo12)\" opacity=\"0.82\"><animate attributeName=\"cy\" values=\"60;56;60\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse></g></g></svg></span><h2 class=\"h2\">Want to be one of the first?</h2><span class=\"p\" style=\"color: rgba(255,255,255,0.82)\">SageOS · sageos.co</span></div>\n<div class=\"btns\"><a class=\"btn btnw\" href=\"/waitlist\">Join the waitlist</a></div>\n</div>\n</div>\n</section>\n<dc-import name=\"Footer\" hint-size=\"100%,260px\"></dc-import>\n</div>", (function(){ class Component extends DCLogic {
+  renderVals() {
+    return {
+      values: [
+        { tag: 'One copy', title: 'Every fact lives in one place', body: 'A booking, bill or birthday is stored once and shown everywhere it matters.' },
+        { tag: 'Plain words', title: 'Written like a person talks', body: '“Take an umbrella tonight” beats a weather widget.' },
+        { tag: 'You decide', title: 'Helpful, never pushy', body: 'Sage works on tasks you start, asks before it spends, and stays quiet otherwise.' }
+      ]
+    };
+  }
+}
+ return Component; })());
+__dcStart("About");</script>
+</body>
+</html>

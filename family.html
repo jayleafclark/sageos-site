@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Family · Sage OS</title>
+<meta name="description" content="Landing texts, SOS and sharing where each person picks exactly what others see.">
+<link rel="canonical" href="https://sageos.co/family">
+<meta property="og:type" content="website"><meta property="og:site_name" content="SageOS"><meta property="og:title" content="Family · Sage OS"><meta property="og:description" content="Landing texts, SOS and sharing where each person picks exactly what others see."><meta property="og:url" content="https://sageos.co/family">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@keyframes sgRise{from{opacity:.001;transform:translateY(14px);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+.rise{animation:sgRise 1.1s cubic-bezier(.22,1,.36,1) both}.d1{animation-delay:.15s}.d2{animation-delay:.32s}.d3{animation-delay:.5s}
+@keyframes sgReveal{from{opacity:.001;transform:translateY(22px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){.sec .card,.sec .panel,.sec .shot,.sec .band,.sec .li,.sec .kpi{animation:sgReveal linear both;animation-timeline:view();animation-range:entry 0% cover 22%}}
+.card,.panel,.tile,.shot{transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s cubic-bezier(.22,1,.36,1),background .4s}
+a.card:hover,.card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -24px rgba(17,22,19,.28)}
+.bandorb{position:absolute;top:22px;right:22px;pointer-events:none;opacity:.95}
+@media (max-width: 600px){.bandorb{display:none}}
+body{margin:0;background:#FFFFFF}
+a{color:#1E4D3A}a:hover{color:#123326}
+.w{width:100%;max-width:1180px;margin:0 auto;box-sizing:border-box;padding-inline:24px}
+.sec{padding-block:clamp(56px,7vw,96px)}
+.alt{background:#F4F6F5}
+.eb{font:600 12px/1.2 Geist,sans-serif;letter-spacing:.5px;text-transform:uppercase;color:#5A625E}
+.h1{margin:0;font-size:clamp(2.25rem,1.4rem + 2.6vw,3.5rem);line-height:1.04;font-weight:600;letter-spacing:-.035em;text-wrap:balance}
+.h2{margin:0;font-size:clamp(1.625rem,1.2rem + 1.3vw,2.25rem);line-height:1.12;font-weight:600;letter-spacing:-.025em;text-wrap:balance}
+.h3{margin:0;font-size:17px;line-height:22px;font-weight:650;letter-spacing:-.2px;padding-left:10px;border-left:4px solid #3E8E6E}
+.lead{margin:0;font-size:clamp(1rem,.95rem + .25vw,1.125rem);line-height:1.6;color:#2E3532;max-width:36em}
+.p{margin:0;font-size:15px;line-height:1.6;color:#2E3532}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 22px;border-radius:12px;background:#1E4D3A;color:#FFFFFF;font:600 15px Geist,sans-serif;text-decoration:none;border:none;cursor:pointer;transition:background .2s,transform .2s}
+.btn:hover{background:#123326;color:#FFFFFF}.btn:active{transform:scale(.98)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{background:#F4F6F5;border:1px solid transparent;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:#111613;transition:transform .3s cubic-bezier(.32,.72,0,1),box-shadow .3s cubic-bezier(.32,.72,0,1),border-color .3s}
+a.card:hover{transform:translateY(-3px);border-color:#D5DDD8;box-shadow:0 14px 30px -18px rgba(17,22,19,.25);color:#111613}
+.more{margin-top:auto;padding-top:6px;font-size:14px;font-weight:600;color:#1E4D3A}
+.band{position:relative;overflow:hidden;border-radius:20px;color:#FFFFFF;background:#1E4D3A}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center}
+.mock{border-radius:18px;border:1px solid #E6EAE7;background:#FFFFFF;padding:18px;display:flex;flex-direction:column;gap:10px;box-shadow:0 24px 48px -28px rgba(17,22,19,.28)}
+.row{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:12px;background:#F4F6F5}
+@keyframes sgRing{0%{box-shadow:0 0 0 0 rgba(180,35,24,.45)}100%{box-shadow:0 0 0 16px rgba(180,35,24,0)}}
+.ring{animation:sgRing 1.1s ease-out infinite}
+@media (max-width: 900px){.grid,.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}.split{grid-template-columns:1fr;gap:32px}}
+@media (max-width: 600px){.grid,.grid2{grid-template-columns:1fr}.btns .btn{flex:1 1 100%}.band{border-radius:20px}.w{padding-inline:16px}}
+a:focus-visible,button:focus-visible{outline:2px solid #3E8E6E;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+.alt .card{background:#FFFFFF}
+
+
+body{margin:0}
+a{color:#1E4D3A}a:hover{color:#123326}
+.nv-bar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.88);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px)}
+.nv-in{width:100%;max-width:1180px;margin:0 auto;box-sizing:border-box;padding:0 24px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nv-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#111613}
+.nv-orb{width:46px;height:46px;flex:none;display:block}
+.nv-word{font-size:28px;font-weight:600;letter-spacing:-0.8px;line-height:1}
+.nv-links{display:flex;align-items:center;gap:2px}
+.nv-l{height:38px;padding:0 12px;border-radius:9px;font-size:14px;font-weight:500;color:#2E3532;text-decoration:none;white-space:nowrap;display:flex;align-items:center;transition:color .2s,background .2s}
+.nv-l:hover{color:#111613;background:#F4F6F5}
+.nv-l.on{background:#111613;color:#FFFFFF;font-weight:600}
+.nv-cta{margin-left:10px;height:42px;padding:0 18px;border-radius:12px;background:#1E4D3A;color:#FFFFFF;font-size:14px;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;white-space:nowrap;transition:background .2s}
+.nv-cta:hover{background:#123326;color:#FFFFFF}
+.nv-burger{display:none;width:44px;height:44px;border:1px solid #DCE2DE;border-radius:12px;background:#FFFFFF;align-items:center;justify-content:center;cursor:pointer}
+.nv-panel{display:none}
+@keyframes nvDrop{from{opacity:.001;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (max-width: 1040px){
+.nv-links{display:none}
+.nv-burger{display:flex}
+.nv-panel{display:flex;flex-direction:column;padding:4px 24px 20px;animation:nvDrop .3s cubic-bezier(.32,.72,0,1) both}
+}
+@media (max-width: 600px){.nv-in{height:64px;padding:0 16px}.nv-orb{width:38px;height:38px}.nv-word{font-size:23px}.nv-panel{padding:4px 16px 20px}}
+.nv-m{min-height:52px;display:flex;align-items:center;font-size:17px;font-weight:500;color:#111613;text-decoration:none;border-bottom:1px solid #EEF1EF}
+.nv-m.on{color:#1E4D3A;font-weight:600}
+a:focus-visible,button:focus-visible{outline:2px solid #3E8E6E;outline-offset:2px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+
+
+body{margin:0}
+a{color:#1E4D3A}a:hover{color:#123326}
+.ft{border-top:1px solid #E6EAE7;background:#FFFFFF}
+.ft-in{width:100%;max-width:1180px;margin:0 auto;box-sizing:border-box;padding:44px 24px 32px;display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px}
+.ft-h{font:600 12px Geist,sans-serif;letter-spacing:.5px;text-transform:uppercase;color:#5A625E;margin-bottom:4px}
+.ft-col{display:flex;flex-direction:column;gap:8px}
+.ft-a{font-size:14px;color:#2E3532;text-decoration:none;transition:color .2s}
+.ft-a:hover{color:#1E4D3A}
+.ft-base{width:100%;max-width:1180px;margin:0 auto;box-sizing:border-box;padding:16px 24px 28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12px;color:#5A625E;border-top:1px solid #EEF1EF}
+@media (max-width: 720px){.ft-in{grid-template-columns:repeat(2,minmax(0,1fr))}.ft-brand{grid-column:1 / -1}}
+</style>
+</head>
+<body>
+<div id="app"><div style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #111613; background: #FFFFFF; -webkit-font-smoothing: antialiased">
+<div data-dc-import="Nav" data-props="{&quot;active&quot;:&quot;family&quot;}"><div class="nv-bar" style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #111613">
+<div class="nv-in">
+<a class="nv-logo" href="/" aria-label="Sage OS home">
+<svg class="nv-orb" viewBox="-10 -10 120 120" aria-hidden="true" style="overflow: visible"><defs><filter id="nvb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5.5"/></filter><filter id="nvc" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter><linearGradient id="nv1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8F2DA"/><stop offset="0.55" stop-color="#5FC9A6"/><stop offset="1" stop-color="#2F9C7C"/></linearGradient><linearGradient id="nv2" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#3E9474"/><stop offset="0.6" stop-color="#245C46"/><stop offset="1" stop-color="#1E4D3A"/></linearGradient><radialGradient id="nv3" cx="0.4" cy="0.4"><stop offset="0" stop-color="#F2FFF8"/><stop offset="0.45" stop-color="#C9EFD9"/><stop offset="1" stop-color="#C9EFD9" stop-opacity="0.4"/></radialGradient></defs><g><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="12s" repeatCount="indefinite"/><g filter="url(#nvb)"><ellipse cx="50.6" cy="35.7" rx="26.6" ry="18.7" fill="url(#nv1)" opacity="0.95"><animate attributeName="rx" values="26.6;29.5;26.6" dur="6s" repeatCount="indefinite"/></ellipse><ellipse cx="63.7" cy="58.6" rx="18" ry="15.8" fill="url(#nv3)" opacity="0.9"><animate attributeName="ry" values="15.8;18;15.8" dur="6s" repeatCount="indefinite"/></ellipse><ellipse cx="43.5" cy="37" rx="10.8" ry="10" fill="#E3F2B0" opacity="0.55"></ellipse></g><g filter="url(#nvc)"><ellipse cx="30.5" cy="60" rx="15" ry="21.6" fill="url(#nv2)" opacity="0.82"><animate attributeName="cy" values="60;56;60" dur="6s" repeatCount="indefinite"/></ellipse></g></g></svg>
+<span class="nv-word">Sage <span style="font-weight: 400; color: #5A625E">OS</span></span>
+</a>
+<div class="nv-links">
+
+<a href="/" class="nv-l">Home</a>
+
+<a href="/concierge" class="nv-l">Concierge</a>
+
+<a href="/health" class="nv-l">Health</a>
+
+<a href="/money" class="nv-l">Money</a>
+
+<a href="/travel" class="nv-l">Travel</a>
+
+<a href="/vault" class="nv-l">Vault</a>
+
+<a href="/family" class="nv-l on">Family</a>
+
+<a href="/privacy" class="nv-l">Privacy</a>
+
+<a class="nv-cta" href="/waitlist">Join the waitlist</a>
+</div>
+<button class="nv-burger" type="button" data-on-click="s19:0" aria-expanded="false" aria-label="Open menu">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111613" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"></path></svg>
+
+</button>
+</div>
+
+</div></div>
+
+<section class="sec">
+<div class="w split">
+<div style="display: flex; flex-direction: column; gap: 18px">
+<span class="eb rise">Family and safety</span>
+<h1 class="h1 rise d1">Everyone safe, and nobody seeing more than they should.</h1>
+<p class="lead rise d2">Share where you are, when you land and what to do in an emergency. Each person picks what they share, one switch at a time.</p>
+<div class="btns rise d3"><a class="btn" href="/waitlist">Join the waitlist</a></div>
+</div>
+<div class="mock rise d2">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 10px"><span class="h3">What Alex shares with you</span><span style="font-size: 12px; color: #5A625E">Sample · try it</span></div>
+
+<div class="row">
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 600">Location</span><span style="font-size: 12px; color: #5A625E">Where they are, from their phone</span></span>
+<button type="button" data-on-click="s18:0" aria-pressed="true" aria-label="Stop sharing Location" style="flex: none; position: relative; width: 46px; height: 26px; border-radius: 999px; border: none; cursor: pointer; transition: background .3s cubic-bezier(.32,.72,0,1); background: #1E4D3A"><span style="position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 999px; background: #FFFFFF; transition: transform .3s cubic-bezier(.32,.72,0,1); transform: translateX(20px)"></span></button>
+</div>
+
+<div class="row">
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 600">Trips</span><span style="font-size: 12px; color: #5A625E">Flights and landing texts</span></span>
+<button type="button" data-on-click="s18:1" aria-pressed="true" aria-label="Stop sharing Trips" style="flex: none; position: relative; width: 46px; height: 26px; border-radius: 999px; border: none; cursor: pointer; transition: background .3s cubic-bezier(.32,.72,0,1); background: #1E4D3A"><span style="position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 999px; background: #FFFFFF; transition: transform .3s cubic-bezier(.32,.72,0,1); transform: translateX(20px)"></span></button>
+</div>
+
+<div class="row">
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 600">Health</span><span style="font-size: 12px; color: #5A625E">Appointments only, never records</span></span>
+<button type="button" data-on-click="s18:2" aria-pressed="false" aria-label="Share Health" style="flex: none; position: relative; width: 46px; height: 26px; border-radius: 999px; border: none; cursor: pointer; transition: background .3s cubic-bezier(.32,.72,0,1); background: #B9C7BE"><span style="position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 999px; background: #FFFFFF; transition: transform .3s cubic-bezier(.32,.72,0,1); transform: translateX(0)"></span></button>
+</div>
+
+<div class="row">
+<span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 14px; font-weight: 600">Emergency papers</span><span style="font-size: 12px; color: #5A625E">Only if something happens</span></span>
+<button type="button" data-on-click="s18:3" aria-pressed="false" aria-label="Share Emergency papers" style="flex: none; position: relative; width: 46px; height: 26px; border-radius: 999px; border: none; cursor: pointer; transition: background .3s cubic-bezier(.32,.72,0,1); background: #B9C7BE"><span style="position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 999px; background: #FFFFFF; transition: transform .3s cubic-bezier(.32,.72,0,1); transform: translateX(0)"></span></button>
+</div>
+
+<div style="display: flex; align-items: center; gap: 12px; padding-top: 4px">
+<button type="button" data-on-click="s18:4" class="" style="flex: none; height: 44px; padding: 0 20px; border-radius: 999px; border: none; background: #B42318; color: #FFFFFF; font: 700 14px Geist, sans-serif; cursor: pointer">SOS</button>
+<span style="font-size: 13px; line-height: 1.4; color: #5A625E">Sends your exact location to everyone in your family.</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="w" style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px"><span class="eb">What it does</span><h2 class="h2">Peace of mind without checking in all day.</h2></div>
+<div class="grid">
+
+<div class="card"><span class="eb" style="font-size: 11px">Map</span><span class="h3">Who’s where</span><span class="p">People who share location show on one map with the last update.</span></div>
+
+<div class="card"><span class="eb" style="font-size: 11px">Sharing</span><span class="h3">Per person, per thing</span><span class="p">Location, trips, appointments and papers, each switched by its owner.</span></div>
+
+<div class="card"><span class="eb" style="font-size: 11px">Landing texts</span><span class="h3">“Took off” and “landed”</span><span class="p">Sent on their own to the people you choose.</span></div>
+
+<div class="card"><span class="eb" style="font-size: 11px">SOS</span><span class="h3">One tap, exact location</span><span class="p">Sends where you are, with the local emergency number.</span></div>
+
+<div class="card"><span class="eb" style="font-size: 11px">Safety</span><span class="h3">Warnings where anyone is</span><span class="p">Storms and safety levels for every family member’s location.</span></div>
+
+<div class="card"><span class="eb" style="font-size: 11px">Family days</span><span class="h3">Birthdays and gatherings</span><span class="p">What’s coming up, with the plan Concierge made for each.</span></div>
+
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="w">
+<div class="band split" style="padding: clamp(28px, 5vw, 48px); gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="display: block; margin-bottom: 4px"><svg width="44" height="44" viewBox="-10 -10 120 120" aria-hidden="true" style="display: block; flex: none; overflow: visible; "><defs><filter id="boFam1b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5.5"/></filter><filter id="boFam1c" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter><linearGradient id="boFam11" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8F2DA"/><stop offset="0.55" stop-color="#5FC9A6"/><stop offset="1" stop-color="#2F9C7C"/></linearGradient><linearGradient id="boFam12" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#3E9474"/><stop offset="0.6" stop-color="#245C46"/><stop offset="1" stop-color="#1E4D3A"/></linearGradient><radialGradient id="boFam13" cx="0.4" cy="0.4"><stop offset="0" stop-color="#F2FFF8"/><stop offset="0.45" stop-color="#C9EFD9"/><stop offset="1" stop-color="#C9EFD9" stop-opacity="0.4"/></radialGradient></defs><g><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="14s" repeatCount="indefinite"/><g filter="url(#boFam1b)"><ellipse cx="50.6" cy="35.7" rx="26.6" ry="18.7" fill="url(#boFam11)" opacity="0.95"><animate attributeName="rx" values="26.6;29.5;26.6" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="35.7;32;35.7" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="63.7" cy="58.6" rx="18" ry="15.8" fill="url(#boFam13)" opacity="0.9"><animate attributeName="ry" values="15.8;18;15.8" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="43.5" cy="37" rx="10.8" ry="10" fill="#E3F2B0" opacity="0.55"><animate attributeName="cx" values="43.5;50;43.5" dur="14s" repeatCount="indefinite"/></ellipse></g><g filter="url(#boFam1c)"><ellipse cx="30.5" cy="60" rx="15" ry="21.6" fill="url(#boFam12)" opacity="0.82"><animate attributeName="cy" values="60;56;60" dur="7s" repeatCount="indefinite"/></ellipse></g></g></svg></span><span class="eb" style="color: #C9EFD9">Two ways to join</span><h2 class="h2">Not everyone needs the app.</h2></div>
+<div class="grid2">
+<div style="padding: 18px; border-radius: 14px; background: rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 16px; font-weight: 600">Just get alerts</span><span style="font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.82)">Landing texts, warnings and SOS by text. They see nothing else.</span></div>
+<div style="padding: 18px; border-radius: 14px; background: rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 6px"><span style="font-size: 16px; font-weight: 600">Join Sage OS</span><span style="font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.82)">Their own private space and Concierge. They choose what to share.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sec alt">
+<div class="w" style="display: flex; flex-direction: column; gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 12px"><span class="eb">How it connects</span><h2 class="h2">Family works with the rest of Sage.</h2></div>
+<div class="grid4">
+
+<a class="card" href="/travel"><span class="h3">Travel</span><span class="p">Flights feed the landing texts.</span><span class="more">See Travel</span></a>
+
+<a class="card" href="/vault"><span class="h3">Vault</span><span class="p">Emergency plans live in the Vault.</span><span class="more">See Vault</span></a>
+
+<a class="card" href="/concierge"><span class="h3">Concierge</span><span class="p">Plans for birthdays and family days.</span><span class="more">See Concierge</span></a>
+
+<a class="card" href="/privacy"><span class="h3">Privacy</span><span class="p">Even an admin can’t see private info.</span><span class="more">See Privacy</span></a>
+
+</div>
+</div>
+</section>
+
+<section class="sec">
+<div class="w" style="display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center">
+<h2 class="h2">Bring your family in.</h2>
+<div class="btns" style="justify-content: center"><a class="btn" href="/waitlist">Join the waitlist</a></div>
+</div>
+</section>
+<div data-dc-import="Footer" data-props="{}"><footer class="ft" style="font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #111613">
+<div class="ft-in">
+<div class="ft-col ft-brand">
+<a href="/" style="display: flex; align-items: center; gap: 8px; text-decoration: none; color: #111613">
+<svg width="38" height="38" viewBox="-10 -10 120 120" aria-hidden="true" style="display: block; flex: none; overflow: visible; "><defs><filter id="ftxb" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5.5"/></filter><filter id="ftxc" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter><linearGradient id="ftx1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8F2DA"/><stop offset="0.55" stop-color="#5FC9A6"/><stop offset="1" stop-color="#2F9C7C"/></linearGradient><linearGradient id="ftx2" x1="0" y1="0" x2="0.3" y2="1"><stop offset="0" stop-color="#3E9474"/><stop offset="0.6" stop-color="#245C46"/><stop offset="1" stop-color="#1E4D3A"/></linearGradient><radialGradient id="ftx3" cx="0.4" cy="0.4"><stop offset="0" stop-color="#F2FFF8"/><stop offset="0.45" stop-color="#C9EFD9"/><stop offset="1" stop-color="#C9EFD9" stop-opacity="0.4"/></radialGradient></defs><g><animateTransform attributeName="transform" type="rotate" from="0 50 50" to="360 50 50" dur="14s" repeatCount="indefinite"/><g filter="url(#ftxb)"><ellipse cx="50.6" cy="35.7" rx="26.6" ry="18.7" fill="url(#ftx1)" opacity="0.95"><animate attributeName="rx" values="26.6;29.5;26.6" dur="7s" repeatCount="indefinite"/><animate attributeName="cy" values="35.7;32;35.7" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="63.7" cy="58.6" rx="18" ry="15.8" fill="url(#ftx3)" opacity="0.9"><animate attributeName="ry" values="15.8;18;15.8" dur="7s" repeatCount="indefinite"/></ellipse><ellipse cx="43.5" cy="37" rx="10.8" ry="10" fill="#E3F2B0" opacity="0.55"><animate attributeName="cx" values="43.5;50;43.5" dur="14s" repeatCount="indefinite"/></ellipse></g><g filter="url(#ftxc)"><ellipse cx="30.5" cy="60" rx="15" ry="21.6" fill="url(#ftx2)" opacity="0.82"><animate attributeName="cy" values="60;56;60" dur="7s" repeatCount="indefinite"/></ellipse></g></g></svg>
+<span style="font-size: 23px; font-weight: 600; letter-spacing: -0.6px">Sage <span style="font-weight: 400; color: #5A625E">OS</span></span>
+</a>
+<span style="font-size: 14px; line-height: 1.55; color: #5A625E; max-width: 280px">Your health, money, trips and papers in one place, with a concierge that asks before it acts.</span>
+</div>
+<div class="ft-col"><span class="ft-h">Product</span><a class="ft-a" href="/concierge">Concierge</a><a class="ft-a" href="/health">Health</a><a class="ft-a" href="/money">Money</a><a class="ft-a" href="/travel">Travel</a></div>
+<div class="ft-col"><span class="ft-h">More</span><a class="ft-a" href="/vault">Vault</a><a class="ft-a" href="/family">Family</a><a class="ft-a" href="/privacy">Privacy</a><a class="ft-a" href="/about">About</a></div>
+<div class="ft-col"><span class="ft-h">Get in</span><a class="ft-a" href="/waitlist">Join the waitlist</a><span class="ft-a">sageos.co</span></div>
+</div>
+<div class="ft-base"><span>© 2026 SageOS</span><span>Sage helps you keep track. It isn’t medical, tax or legal advice.</span></div>
+</footer></div>
+</div></div>
+<script src="/assets/app.js"></script>
+<script>__dc("Family", "<div style=\"font-family: Geist, 'Helvetica Neue', Arial, sans-serif; color: #111613; background: #FFFFFF; -webkit-font-smoothing: antialiased\">\n<dc-import name=\"Nav\" active=\"family\" hint-size=\"100%,80px\"></dc-import>\n\n<section class=\"sec\">\n<div class=\"w split\">\n<div style=\"display: flex; flex-direction: column; gap: 18px\">\n<span class=\"eb rise\">Family and safety</span>\n<h1 class=\"h1 rise d1\">Everyone safe, and nobody seeing more than they should.</h1>\n<p class=\"lead rise d2\">Share where you are, when you land and what to do in an emergency. Each person picks what they share, one switch at a time.</p>\n<div class=\"btns rise d3\"><a class=\"btn\" href=\"/waitlist\">Join the waitlist</a></div>\n</div>\n<div class=\"mock rise d2\">\n<div style=\"display: flex; justify-content: space-between; align-items: center; gap: 10px\"><span class=\"h3\">What Alex shares with you</span><span style=\"font-size: 12px; color: #5A625E\">Sample · try it</span></div>\n<sc-for list=\"{{ shares }}\" as=\"s\" hint-placeholder-count=\"4\">\n<div class=\"row\">\n<span style=\"flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px\"><span style=\"font-size: 14px; font-weight: 600\">{{ s.name }}</span><span style=\"font-size: 12px; color: #5A625E\">{{ s.note }}</span></span>\n<button type=\"button\" onClick=\"{{ s.toggle }}\" aria-pressed=\"{{ s.on }}\" aria-label=\"{{ s.aria }}\" style=\"{{ s.track }}\"><span style=\"{{ s.knob }}\"></span></button>\n</div>\n</sc-for>\n<div style=\"display: flex; align-items: center; gap: 12px; padding-top: 4px\">\n<button type=\"button\" onClick=\"{{ sos }}\" class=\"{{ sosClass }}\" style=\"flex: none; height: 44px; padding: 0 20px; border-radius: 999px; border: none; background: #B42318; color: #FFFFFF; font: 700 14px Geist, sans-serif; cursor: pointer\">{{ sosLabel }}</button>\n<span style=\"font-size: 13px; line-height: 1.4; color: #5A625E\">{{ sosNote }}</span>\n</div>\n</div>\n</div>\n</section>\n\n<section class=\"sec alt\">\n<div class=\"w\" style=\"display: flex; flex-direction: column; gap: 28px\">\n<div style=\"display: flex; flex-direction: column; gap: 12px; max-width: 640px\"><span class=\"eb\">What it does</span><h2 class=\"h2\">Peace of mind without checking in all day.</h2></div>\n<div class=\"grid\">\n<sc-for list=\"{{ features }}\" as=\"f\" hint-placeholder-count=\"6\">\n<div class=\"card\"><span class=\"eb\" style=\"font-size: 11px\">{{ f.tag }}</span><span class=\"h3\">{{ f.title }}</span><span class=\"p\">{{ f.body }}</span></div>\n</sc-for>\n</div>\n</div>\n</section>\n\n<section class=\"sec\">\n<div class=\"w\">\n<div class=\"band split\" style=\"padding: clamp(28px, 5vw, 48px); gap: 28px\">\n<div style=\"display: flex; flex-direction: column; gap: 10px\"><span style=\"display: block; margin-bottom: 4px\"><svg width=\"44\" height=\"44\" viewBox=\"-10 -10 120 120\" aria-hidden=\"true\" style=\"display: block; flex: none; overflow: visible; \"><defs><filter id=\"boFam1b\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"5.5\"/></filter><filter id=\"boFam1c\" x=\"-50%\" y=\"-50%\" width=\"200%\" height=\"200%\"><feGaussianBlur stdDeviation=\"7\"/></filter><linearGradient id=\"boFam11\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#B8F2DA\"/><stop offset=\"0.55\" stop-color=\"#5FC9A6\"/><stop offset=\"1\" stop-color=\"#2F9C7C\"/></linearGradient><linearGradient id=\"boFam12\" x1=\"0\" y1=\"0\" x2=\"0.3\" y2=\"1\"><stop offset=\"0\" stop-color=\"#3E9474\"/><stop offset=\"0.6\" stop-color=\"#245C46\"/><stop offset=\"1\" stop-color=\"#1E4D3A\"/></linearGradient><radialGradient id=\"boFam13\" cx=\"0.4\" cy=\"0.4\"><stop offset=\"0\" stop-color=\"#F2FFF8\"/><stop offset=\"0.45\" stop-color=\"#C9EFD9\"/><stop offset=\"1\" stop-color=\"#C9EFD9\" stop-opacity=\"0.4\"/></radialGradient></defs><g><animateTransform attributeName=\"transform\" type=\"rotate\" from=\"0 50 50\" to=\"360 50 50\" dur=\"14s\" repeatCount=\"indefinite\"/><g filter=\"url(#boFam1b)\"><ellipse cx=\"50.6\" cy=\"35.7\" rx=\"26.6\" ry=\"18.7\" fill=\"url(#boFam11)\" opacity=\"0.95\"><animate attributeName=\"rx\" values=\"26.6;29.5;26.6\" dur=\"7s\" repeatCount=\"indefinite\"/><animate attributeName=\"cy\" values=\"35.7;32;35.7\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse><ellipse cx=\"63.7\" cy=\"58.6\" rx=\"18\" ry=\"15.8\" fill=\"url(#boFam13)\" opacity=\"0.9\"><animate attributeName=\"ry\" values=\"15.8;18;15.8\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse><ellipse cx=\"43.5\" cy=\"37\" rx=\"10.8\" ry=\"10\" fill=\"#E3F2B0\" opacity=\"0.55\"><animate attributeName=\"cx\" values=\"43.5;50;43.5\" dur=\"14s\" repeatCount=\"indefinite\"/></ellipse></g><g filter=\"url(#boFam1c)\"><ellipse cx=\"30.5\" cy=\"60\" rx=\"15\" ry=\"21.6\" fill=\"url(#boFam12)\" opacity=\"0.82\"><animate attributeName=\"cy\" values=\"60;56;60\" dur=\"7s\" repeatCount=\"indefinite\"/></ellipse></g></g></svg></span><span class=\"eb\" style=\"color: #C9EFD9\">Two ways to join</span><h2 class=\"h2\">Not everyone needs the app.</h2></div>\n<div class=\"grid2\">\n<div style=\"padding: 18px; border-radius: 14px; background: rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 6px\"><span style=\"font-size: 16px; font-weight: 600\">Just get alerts</span><span style=\"font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.82)\">Landing texts, warnings and SOS by text. They see nothing else.</span></div>\n<div style=\"padding: 18px; border-radius: 14px; background: rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 6px\"><span style=\"font-size: 16px; font-weight: 600\">Join Sage OS</span><span style=\"font-size: 14px; line-height: 1.5; color: rgba(255,255,255,0.82)\">Their own private space and Concierge. They choose what to share.</span></div>\n</div>\n</div>\n</div>\n</section>\n\n<section class=\"sec alt\">\n<div class=\"w\" style=\"display: flex; flex-direction: column; gap: 24px\">\n<div style=\"display: flex; flex-direction: column; gap: 12px\"><span class=\"eb\">How it connects</span><h2 class=\"h2\">Family works with the rest of Sage.</h2></div>\n<div class=\"grid4\">\n<sc-for list=\"{{ links }}\" as=\"l\" hint-placeholder-count=\"4\">\n<a class=\"card\" href=\"{{ l.href }}\"><span class=\"h3\">{{ l.title }}</span><span class=\"p\">{{ l.body }}</span><span class=\"more\">{{ l.cta }}</span></a>\n</sc-for>\n</div>\n</div>\n</section>\n\n<section class=\"sec\">\n<div class=\"w\" style=\"display: flex; flex-direction: column; align-items: center; gap: 18px; text-align: center\">\n<h2 class=\"h2\">Bring your family in.</h2>\n<div class=\"btns\" style=\"justify-content: center\"><a class=\"btn\" href=\"/waitlist\">Join the waitlist</a></div>\n</div>\n</section>\n<dc-import name=\"Footer\" hint-size=\"100%,260px\"></dc-import>\n</div>", (function(){ class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { on: { loc: true, trips: true, health: false, docs: false }, sos: false }; }
+  componentWillUnmount() { clearTimeout(this.t); }
+  renderVals() {
+    const S = [
+      { k: 'loc', name: 'Location', note: 'Where they are, from their phone' },
+      { k: 'trips', name: 'Trips', note: 'Flights and landing texts' },
+      { k: 'health', name: 'Health', note: 'Appointments only, never records' },
+      { k: 'docs', name: 'Emergency papers', note: 'Only if something happens' }
+    ];
+    const on = this.state.on;
+    return {
+      shares: S.map((s) => ({
+        name: s.name, note: s.note, on: on[s.k] ? 'true' : 'false', aria: (on[s.k] ? 'Stop sharing ' : 'Share ') + s.name,
+        toggle: () => { const n = Object.assign({}, this.state.on); n[s.k] = !n[s.k]; this.setState({ on: n }); },
+        track: 'flex: none; position: relative; width: 46px; height: 26px; border-radius: 999px; border: none; cursor: pointer; transition: background .3s cubic-bezier(.32,.72,0,1); background: ' + (on[s.k] ? '#1E4D3A' : '#B9C7BE'),
+        knob: 'position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 999px; background: #FFFFFF; transition: transform .3s cubic-bezier(.32,.72,0,1); transform: translateX(' + (on[s.k] ? '20px' : '0') + ')'
+      })),
+      sos: () => { this.setState({ sos: true }); clearTimeout(this.t); this.t = setTimeout(() => this.setState({ sos: false }), 3000); },
+      sosClass: this.state.sos ? 'ring' : '',
+      sosLabel: this.state.sos ? 'Sending' : 'SOS',
+      sosNote: this.state.sos ? 'Exact location sent to your family. This is a demo.' : 'Sends your exact location to everyone in your family.',
+      features: [
+        { tag: 'Map', title: 'Who’s where', body: 'People who share location show on one map with the last update.' },
+        { tag: 'Sharing', title: 'Per person, per thing', body: 'Location, trips, appointments and papers, each switched by its owner.' },
+        { tag: 'Landing texts', title: '“Took off” and “landed”', body: 'Sent on their own to the people you choose.' },
+        { tag: 'SOS', title: 'One tap, exact location', body: 'Sends where you are, with the local emergency number.' },
+        { tag: 'Safety', title: 'Warnings where anyone is', body: 'Storms and safety levels for every family member’s location.' },
+        { tag: 'Family days', title: 'Birthdays and gatherings', body: 'What’s coming up, with the plan Concierge made for each.' }
+      ],
+      links: [
+        { title: 'Travel', body: 'Flights feed the landing texts.', cta: 'See Travel', href: '/travel' },
+        { title: 'Vault', body: 'Emergency plans live in the Vault.', cta: 'See Vault', href: '/vault' },
+        { title: 'Concierge', body: 'Plans for birthdays and family days.', cta: 'See Concierge', href: '/concierge' },
+        { title: 'Privacy', body: 'Even an admin can’t see private info.', cta: 'See Privacy', href: '/privacy' }
+      ]
+    };
+  }
+}
+ return Component; })());
+__dcStart("Family");</script>
+</body>
+</html>
